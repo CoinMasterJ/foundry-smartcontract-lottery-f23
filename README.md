@@ -1,66 +1,39 @@
-## Foundry
+//Pragma statements
+//Import statements
+//Events
+//Errors
+//Interfaces
+//Libraries
+//Contracts
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+//Inside each contract, library or interface, use the following order:
 
-Foundry consists of:
+//Type declarations
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+//State variables
+//Events
+//Errors
+//Modifiers
+//Functions
 
-## Documentation
+## Testing 
+1. Write deploy scripts
+2. Write tests
+    1. use anvil
+    2. use forked testnet
+    3. use forked mainnet
 
-https://book.getfoundry.sh/
+## VRF On-chain Provably Fair Lottery 
 
-## Usage
+##  About
 
-### Build
+This is code created to create an on-chain provably fair lottery through the use of smart contracts and chainlink VRF
 
-```shell
-$ forge build
-```
 
-### Test
 
-```shell
-$ forge test
-```
+## Getting Started
 
-### Format
 
-```shell
-$ forge fmt
-```
+### Requirments
 
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+### Usage
